@@ -1,0 +1,119 @@
+/* PALETA DE COLORES 
+    #FFFFD0
+    #F3CCFF
+    #D09CFA
+    #A555EC
+    #FAF8F1
+*/
+
+/* CONFIGURACIÓN GENERAL IDEAL */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* CONFIGURACIÓN DEL BODY */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+/* ESTILOS DEL CONTENEDOR PADRE */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILOS DE LOS CONTENEDORES HIJOS */
+
+.item {
+    font-size: 2rem;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin: -20px;
+    width: 500px;
+}
+
+.item-2 {
+    flex-shrink: 0;
+    margin-top: -20px;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+}
+
+.imgf {
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+ 
+.item-3 {
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+/* ESTILOS DE LA IMAGEN PRINCIPAL */
+
+.portrait-filter {
+    filter: grayscale();
+}
+
+.portrait-filter:hover {
+    filter: none;
+    transition-property: filter;
+    transition-duration: 1s;  
+}
+
+.border-portrait {
+    background-color: #A555EC;
+    padding: 10px 10px 20px 10px;
+}
+
+/* ESTILOS DE BOTON */
+
+.btn-on-image {
+    background-color: #F3CCFF;
+    margin: -30px;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+
+
+.btn {
+    color: black;
+    font-size: 1.5rem;
+    padding: 1em;
+    border-radius: 50px;
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(top, #F3CCFF, #D09CFA);
+    background-image: -moz-linear-gradient(top, #F3CCFF, #D09CFA);
+    background-image: -ms-linear-gradient(top, #F3CCFF, #D09CFA);
+    background-image: -o-linear-gradient(top, #F3CCFF, #D09CFA);
+    background-image: linear-gradient(to bottom, #F3CCFF, #D09CFA);
+    -webkit-box-shadow: 0px 1px 3px #000000;
+    -moz-box-shadow: 0px 1px 3px #000000;
+    box-shadow: 0px 1px 3px #000000;
+
+}
+
+.btn:hover {
+    background: #F3CCFF;
+    background-image: -webkit-linear-gradient(top, #FAF8F1, #D09CFA);
+    background-image: -moz-linear-gradient(top, #FAF8F1, #D09CFA);
+    background-image: -ms-linear-gradient(top, #FAF8F1, #D09CFA);
+    background-image: -o-linear-gradient(top, #FAF8F1, #D09CFA);
+    background-image: linear-gradient(to bottom, #FAF8F1, #D09CFA);
+}
